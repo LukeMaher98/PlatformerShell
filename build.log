@@ -1,0 +1,170 @@
+Build sequence for target(s) `main' is [clean, makedir, compile, jar, main]
+Complete build sequence is [clean, makedir, compile, jar, main, compileRunTestCases, mainWithTest, ]
+
+clean:
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\bin
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com\luke\platformer\gui\GameFrame.class
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com\luke\platformer\gui\GamePanel.class
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com\luke\platformer\gui\PlayPanel.class
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com\luke\platformer\gui\StatsPanel.class
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com\luke\platformer\gui
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com\luke\platformer\intermediary\GameManager.class
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com\luke\platformer\intermediary\Main.class
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com\luke\platformer\intermediary
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com\luke\platformer\logic\Entity.class
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com\luke\platformer\logic\KeyboardController.class
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com\luke\platformer\logic\Tile.class
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com\luke\platformer\logic
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com\luke\platformer
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com\luke
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\bin\com
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\hamcrest-all-1.3.jar
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\idle_L.png
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\idle_R.png
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_L0.png
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_L1.png
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_L2.png
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_L3.png
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_L4.png
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_L5.png
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_R0.png
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_R1.png
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_R2.png
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_R3.png
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_R4.png
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_R5.png
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\bin\junit.jar
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\bin
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\docs
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\docs
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\dist
+   [delete] Deleting C:\Users\Luke Maher\eclipse-workspace\platformer\dist\Platformer.jar
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\dist
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\reports
+   [delete] Deleting directory C:\Users\Luke Maher\eclipse-workspace\platformer\reports
+clean:  duration 0 seconds
+
+makedir:
+    [mkdir] Created dir: C:\Users\Luke Maher\eclipse-workspace\platformer\bin
+    [mkdir] Created dir: C:\Users\Luke Maher\eclipse-workspace\platformer\docs
+    [mkdir] Created dir: C:\Users\Luke Maher\eclipse-workspace\platformer\dist
+    [mkdir] Created dir: C:\Users\Luke Maher\eclipse-workspace\platformer\reports
+makedir:  duration 0 seconds
+
+compile:
+     [copy] hamcrest-all-1.3.jar added as hamcrest-all-1.3.jar doesn't exist.
+     [copy] images\idle_L.png added as images\idle_L.png doesn't exist.
+     [copy] images\idle_R.png added as images\idle_R.png doesn't exist.
+     [copy] images\run_L0.png added as images\run_L0.png doesn't exist.
+     [copy] images\run_L1.png added as images\run_L1.png doesn't exist.
+     [copy] images\run_L2.png added as images\run_L2.png doesn't exist.
+     [copy] images\run_L3.png added as images\run_L3.png doesn't exist.
+     [copy] images\run_L4.png added as images\run_L4.png doesn't exist.
+     [copy] images\run_L5.png added as images\run_L5.png doesn't exist.
+     [copy] images\run_R0.png added as images\run_R0.png doesn't exist.
+     [copy] images\run_R1.png added as images\run_R1.png doesn't exist.
+     [copy] images\run_R2.png added as images\run_R2.png doesn't exist.
+     [copy] images\run_R3.png added as images\run_R3.png doesn't exist.
+     [copy] images\run_R4.png added as images\run_R4.png doesn't exist.
+     [copy] images\run_R5.png added as images\run_R5.png doesn't exist.
+     [copy] junit.jar added as junit.jar doesn't exist.
+     [copy]  omitted as C:\Users\Luke Maher\eclipse-workspace\platformer\bin is up to date.
+     [copy] images added as images doesn't exist.
+     [copy] Copying 16 files to C:\Users\Luke Maher\eclipse-workspace\platformer\bin
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\hamcrest-all-1.3.jar to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\hamcrest-all-1.3.jar
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\images\idle_L.png to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\idle_L.png
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\images\idle_R.png to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\idle_R.png
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\images\run_L0.png to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_L0.png
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\images\run_L1.png to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_L1.png
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\images\run_L2.png to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_L2.png
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\images\run_L3.png to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_L3.png
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\images\run_L4.png to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_L4.png
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\images\run_L5.png to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_L5.png
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\images\run_R0.png to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_R0.png
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\images\run_R1.png to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_R1.png
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\images\run_R2.png to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_R2.png
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\images\run_R3.png to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_R3.png
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\images\run_R4.png to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_R4.png
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\images\run_R5.png to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\images\run_R5.png
+     [copy] Copying C:\Users\Luke Maher\eclipse-workspace\platformer\lib\junit.jar to C:\Users\Luke Maher\eclipse-workspace\platformer\bin\junit.jar
+    [javac] com\luke\platformer\gui\GameFrame.java added as com\luke\platformer\gui\GameFrame.class doesn't exist.
+    [javac] com\luke\platformer\gui\GamePanel.java added as com\luke\platformer\gui\GamePanel.class doesn't exist.
+    [javac] com\luke\platformer\gui\PlayPanel.java added as com\luke\platformer\gui\PlayPanel.class doesn't exist.
+    [javac] com\luke\platformer\gui\StatsPanel.java added as com\luke\platformer\gui\StatsPanel.class doesn't exist.
+    [javac] com\luke\platformer\intermediary\GameManager.java added as com\luke\platformer\intermediary\GameManager.class doesn't exist.
+    [javac] com\luke\platformer\intermediary\Main.java added as com\luke\platformer\intermediary\Main.class doesn't exist.
+    [javac] com\luke\platformer\logic\Entity.java added as com\luke\platformer\logic\Entity.class doesn't exist.
+    [javac] com\luke\platformer\logic\KeyboardController.java added as com\luke\platformer\logic\KeyboardController.class doesn't exist.
+    [javac] com\luke\platformer\logic\Tile.java added as com\luke\platformer\logic\Tile.class doesn't exist.
+    [javac] Compiling 9 source files to C:\Users\Luke Maher\eclipse-workspace\platformer\bin
+    [javac] Using modern compiler
+    [javac] Compilation arguments:
+'-d'
+'C:\Users\Luke Maher\eclipse-workspace\platformer\bin'
+'-classpath'
+'C:\Users\Luke Maher\eclipse-workspace\platformer\bin'
+'-sourcepath'
+'C:\Users\Luke Maher\eclipse-workspace\platformer\src'
+'-g:none'
+
+The ' characters around the executable and arguments are
+not part of the command.
+    [javac] Files to be compiled:
+    [javac]     C:\Users\Luke Maher\eclipse-workspace\platformer\src\com\luke\platformer\gui\GameFrame.java
+    C:\Users\Luke Maher\eclipse-workspace\platformer\src\com\luke\platformer\gui\GamePanel.java
+    C:\Users\Luke Maher\eclipse-workspace\platformer\src\com\luke\platformer\gui\PlayPanel.java
+    C:\Users\Luke Maher\eclipse-workspace\platformer\src\com\luke\platformer\gui\StatsPanel.java
+    C:\Users\Luke Maher\eclipse-workspace\platformer\src\com\luke\platformer\intermediary\GameManager.java
+    C:\Users\Luke Maher\eclipse-workspace\platformer\src\com\luke\platformer\intermediary\Main.java
+    C:\Users\Luke Maher\eclipse-workspace\platformer\src\com\luke\platformer\logic\Entity.java
+    C:\Users\Luke Maher\eclipse-workspace\platformer\src\com\luke\platformer\logic\KeyboardController.java
+    C:\Users\Luke Maher\eclipse-workspace\platformer\src\com\luke\platformer\logic\Tile.java
+    [javac] No sources found.
+compile:  duration 0 seconds
+
+jar:
+      [jar] Building jar: C:\Users\Luke Maher\eclipse-workspace\platformer\dist\Platformer.jar
+      [jar] adding directory META-INF/
+      [jar] adding entry META-INF/MANIFEST.MF
+      [jar] adding directory com/
+      [jar] adding directory com/luke/
+      [jar] adding directory com/luke/platformer/
+      [jar] adding directory com/luke/platformer/gui/
+      [jar] adding directory com/luke/platformer/intermediary/
+      [jar] adding directory com/luke/platformer/logic/
+      [jar] adding directory images/
+      [jar] adding entry com/luke/platformer/gui/GameFrame.class
+      [jar] adding entry com/luke/platformer/gui/GamePanel.class
+      [jar] adding entry com/luke/platformer/gui/PlayPanel.class
+      [jar] adding entry com/luke/platformer/gui/StatsPanel.class
+      [jar] adding entry com/luke/platformer/intermediary/GameManager.class
+      [jar] adding entry com/luke/platformer/intermediary/Main.class
+      [jar] adding entry com/luke/platformer/logic/Entity.class
+      [jar] adding entry com/luke/platformer/logic/KeyboardController.class
+      [jar] adding entry com/luke/platformer/logic/Tile.class
+      [jar] adding entry hamcrest-all-1.3.jar
+      [jar] adding entry images/idle_L.png
+      [jar] adding entry images/idle_R.png
+      [jar] adding entry images/run_L0.png
+      [jar] adding entry images/run_L1.png
+      [jar] adding entry images/run_L2.png
+      [jar] adding entry images/run_L3.png
+      [jar] adding entry images/run_L4.png
+      [jar] adding entry images/run_L5.png
+      [jar] adding entry images/run_R0.png
+      [jar] adding entry images/run_R1.png
+      [jar] adding entry images/run_R2.png
+      [jar] adding entry images/run_R3.png
+      [jar] adding entry images/run_R4.png
+      [jar] adding entry images/run_R5.png
+      [jar] adding entry junit.jar
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+Location: C:\Users\Luke Maher\eclipse-workspace\platformer\build.xml:59: 
+jar:  duration 0 seconds
+
+main:
+main:  duration 0 seconds
+BUILD SUCCESSFUL
+
+BUILD SUCCESSFUL

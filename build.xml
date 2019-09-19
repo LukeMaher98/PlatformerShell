@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Ant-Platformer" default="main" basedir=".">
+    <!-- Creates a log file -->
+    <record name="build.log" loglevel="verbose" action="start" />
+    <!-- Sets veriables which can be used later -->
+    <property name="src.dir" location="src" />
+    <property name="test.dir" location="test" />
+    <property name="build.dir" location="bin" />
+    <property name="dist.dir" location="dist" />
+    <property name="docs.dir" location="docs" />
+    <property name="lib.dir" location="lib" />
+    <property name="reports.tests" location="reports" />
+    <!-- Deletes the existing build, docs and dist directories -->
+    <target name="clean">
+        <delete dir="${build.dir}" />
+        <delete dir="${docs.dir}" />
+        <delete dir="${dist.dir}" />
+        <delete dir="${reports.tests}" />
+    </target>
+    <!-- Creates the build, docs and dist directories -->
+    <target name="makedir">
+        <mkdir dir="${build.dir}" />
+        <mkdir dir="${docs.dir}" />
+        <mkdir dir="${dist.dir}" />
+        <mkdir dir="${reports.tests}" />
+    </target>
+    <!-- Compiles the Java code -->
+    <target name="compile" depends="clean, makedir">
+    	<copy todir="${build.dir}">
+    	  <fileset dir="${lib.dir}"/>
+    	</copy>
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false">
+        </javac>
+        <javac srcdir="${test.dir}" destdir="${build.dir}" includeantruntime="false">
+            <classpath>
+                <pathelement location="${lib.dir}/junit.jar" />
+            	<pathelement location="${lib.dir}/hamcrest-all-1.3.jar" />
+            </classpath> 
+        </javac>
+    </target>
+    <target name="compileRunTestCases" depends="clean, makedir, compile">
+        <junit printsummary="yes" haltonfailure="no">
+            <classpath>
+                <pathelement location="${lib.dir}/junit.jar" />
+            	<pathelement location="${lib.dir}/hamcrest-all-1.3.jar" />
+                <pathelement location="${build.dir}"/>
+            </classpath>
+            <formatter type="plain" />
+            <batchtest fork="yes" todir="${test.dir}">
+                <fileset dir="${test.dir}">
+                    <include name="**/*Test*.java" />
+                    <include name="**/AllTests.java" />
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+    <!-- Creates deployable .jar file -->
+    <target name="jar" depends="compile">
+        <jar destfile="${dist.dir}/Platformer.jar" basedir="${build.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="com.luke.platformer.intermediary.Main" />
+            </manifest>
+        </jar>
+    </target>
+    <target name="main" depends="compile, jar">
+        <description>Main target</description>
+    </target>
+    <target name="mainWithTest" depends="compileRunTestCases, jar">
+        <description>Main and test terget</description>
+    </target>
+</project>
